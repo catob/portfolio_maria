@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	font-family: 'Flamenco', cursive;
+}
+
+ul, li, p {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	padding-top: 40px;
+	padding-left: 50px;
+}
+
+.container {
+	background-image: url('../img/jet-sky.jpg');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+}
+
+.headline {
+	color: #fff;
+	font-weight: 200;
+	padding-bottom: 7px;
+	letter-spacing: 1px;
+}
+
+.social-icons {
+	margin: 0;
+}
+
+.icons {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.social-icons i {
+	color: #fff;
+	font-size: 1.1em;
+}
+
+.social-icons i:hover {
+	color: #2e4147;
+}
