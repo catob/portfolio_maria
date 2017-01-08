@@ -1,22 +1,26 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: 'Flamenco', cursive;
 }
-h1, h2, h3, ul, li, p, a, i {
+h1, h2, ul, li, p, a, i {
   margin: 0;
   padding: 0;
   color: #ffffff;
 }
-h1, h2, h3 {
+h1, h2 {
   letter-spacing: 0.05em;
   font-size: 1.5em;
   font-weight: 300;
   padding-bottom: 0.5em;
 }
+a:focus {
+  outline:0px !important;
+  -webkit-appearance:none;
+}
+
 
 .card {
   padding-top: 3em;
@@ -72,4 +76,5 @@ h1, h2, h3 {
   .container {
     background-image: url('../img/jet-sky-mobile.jpg');
   }
+
 }
