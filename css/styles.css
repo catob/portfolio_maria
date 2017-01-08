@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'Flamenco', cursive;
+}
+h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 200;
+  padding-bottom: 7px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 1em;
+  color: #fff;
+}
+
+.card {
+  padding-top: 3em;
+  padding-left: 3em;
+}
+
+.container {
+  background-image: url('../img/jet-sky-min.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.social-icons {
+  margin: 0;
+}
+
+.icons {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.social-icons i {
+  color: #fff;
+  font-size: 1em;
+}
+
+.social-icons i:hover {
+  color: #2e4147;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-image: url('../img/jet-sky-mobile.jpg');
+  }
+}
