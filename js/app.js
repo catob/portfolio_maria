@@ -11,15 +11,24 @@ $(document).ready(function(){
     var defaultSubmitText = $submit.val();
 
     $.ajax({
-      url: '//formspree.io/cato.benjaminsen@gmail.com',
+      url: '//formspree.io/marialkotti@gmail.com',
       method: 'POST',
       data: $(this).serialize(),
       dataType: 'json',
       success: function(data) {
-        $('#contact-modal').modal('hide');
+        thankYouMessage();
       },
       error: function(err) {
       }
     });
   });
+
+  thankYouMessage = function() {
+    $('#contact-form').remove();
+    $('.modal-title').text('Thank you for you message. I will get back to you shortly.');
+    $('.modal-body').css({'padding': '0'});
+    setTimeout(function() {
+      $('#contact-modal').modal('hide');
+    }, 3000);
+  };
 });
