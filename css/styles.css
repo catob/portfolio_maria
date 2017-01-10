@@ -31,6 +31,10 @@ a:focus {
   background-size: cover;
   background-position: bottom center;
 }
+.icons {
+  display: inline-block;
+  padding-right: 0.75em;
+}
 .social-icons {
   margin-bottom: 1em;
 }
@@ -40,13 +44,16 @@ a:focus {
 .social-icons i:hover {
   color: rgba(28, 42, 47, 0.85);
 }
-.icons {
-  display: inline-block;
-  padding-right: 0.75em;
-}
 #presentation {
   cursor: pointer;
   font-size: 1.3em;
+}
+/*modal*/
+.modal-content {
+  padding: 20px;
+}
+.modal-header {
+  border-bottom: none;
 }
 #contact-form h4 {
   font-size: 1.4em;
@@ -54,12 +61,6 @@ a:focus {
 #contact-form-send:hover {
   background-color: rgba(28, 42, 47, 0.85);
   color: #fff;
-}
-.modal-content {
-  padding: 20px;
-}
-.modal-header {
-  border-bottom: none;
 }
 @media screen and (max-width: 768px) {
   .container {

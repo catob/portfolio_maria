@@ -24,8 +24,9 @@ $(document).ready(function(){
   });
 
   thankYouMessage = function() {
+    var message = 'Thank you for your message. I will get back to you shortly.';
     $('#contact-form').remove();
-    $('.modal-title').text('Thank you for you message. I will get back to you shortly.');
+    $('.modal-title').text(message);
     $('.modal-body').css({'padding': '0'});
     setTimeout(function() {
       $('#contact-modal').modal('hide');
