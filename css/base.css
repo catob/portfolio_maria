@@ -16,6 +16,9 @@ h1, h2 {
   font-weight: 300;
   padding-bottom: 0.5em;
 }
+h1 span {
+  font-size: 0.75em;
+}
 a:focus {
   outline: 0px !important;
   -webkit-appearance: none;

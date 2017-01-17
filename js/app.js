@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('#contact-modal').on('shown.bs.modal', function () {
-    $('#contact-modal').focus()
+    $('#contact-modal').focus();
   });
 
   var $contactForm = $('#contact-form');
