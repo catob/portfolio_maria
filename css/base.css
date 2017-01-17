@@ -5,12 +5,12 @@ body {
   margin: 0;
   font-family: 'Flamenco', cursive;
 }
-h1, h2, ul, li, p, a, i {
+h1, ul, li, p, a, i {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-h1, h2 {
+h1 {
   letter-spacing: 0.05em;
   font-size: 1.75em;
   font-weight: 300;
@@ -68,5 +68,15 @@ a:focus {
 @media screen and (max-width: 768px) {
   .container {
     background-image: url('../img/jet-sky-mobile.jpg');
+  }
+}
+@media screen and (max-width: 415px) {
+  span.break {
+    display: none;
+  }
+  span.title {
+    display: block;
+    padding-top: 0.5em;
+    font-size: 0.65em;
   }
 }
