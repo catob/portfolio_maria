@@ -1,0 +1,133 @@
+$white: #ffffff;
+
+// * {
+//   box-sizing: border-box;
+// }
+body {
+  margin: 0;
+  font-family: 'Flamenco', cursive;
+}
+h1, h2, ul, li, p, a, i {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: black;
+  font-size: 18px;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+section {
+  padding: 30px 15px;
+}
+
+
+
+header {
+  background-image: url('../img/jet-sky-min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $white;
+  }
+}
+
+.intro {
+  text-align: center;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+
+.timeline {
+  .timeline__row {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    div {
+      width: 350px;
+      position: relative;
+    }
+    span.line__box {
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      border: 1px solid green;
+    }
+    span.line {
+      border: 1px solid green;
+      margin: 0 50px;
+    }
+    span.circle {
+      display: inline-block;
+      background-color: green;
+      height: 10px;
+      width: 10px;
+      border-radius: 10px;
+      position: absolute;
+      top: 46%;
+    }
+    div:nth-of-type(odd) {
+      text-align: right;
+      span.line__box {
+        right: -50px;
+      }
+      span.circle {
+        right: -56px;
+      }
+    }
+    div:nth-of-type(even) {
+      text-align: left;
+      span.line__box {
+        left: -50px;
+      }
+      span.circle {
+        left: -56px;
+      }
+    }
+    .step__1 {
+      margin-top: 25px;
+    }
+    .step__2 {
+      margin-top: 100px;
+    }
+    .step__3 {
+      margin-top: -30px;
+    }
+    .step__4 {
+      margin-top: 90px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 480px) {
+      display: block;
+      div:nth-of-type(odd),
+      div {
+        width: auto;
+        text-align: left;
+        span {
+          display: none;
+        }
+      }
+      span {
+        display: none;
+      }
+      .step__1,
+      .step__2,
+      .step__3,
+      .step__4 {
+        margin-top: 0px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -23,7 +23,8 @@ a:focus {
   outline: 0px !important;
   -webkit-appearance: none;
 }
-.card {
+
+/*.card {
   padding-top: 3em;
   padding-left: 3em;
 }
@@ -43,7 +44,7 @@ a:focus {
 }
 .social-icons i {
   font-size: 1.5em;
-}
+}*/
 .social-icons i:hover {
   color: rgba(28, 42, 47, 0.85);
 }
@@ -51,7 +52,8 @@ a:focus {
   cursor: pointer;
   font-size: 1.3em;
 }
-/*modal*/
+
+/*modal
 .modal-content {
   padding: 20px;
 }
@@ -79,4 +81,4 @@ a:focus {
     padding-top: 0.5em;
     font-size: 0.65em;
   }
-}
+}*/

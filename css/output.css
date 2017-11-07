@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Flamenco', cursive; }
+
+h1, h2, ul, li, p, a, i {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: black;
+  font-size: 18px; }
+
+.navbar {
+  position: absolute;
+  width: 100%; }
+
+section {
+  padding: 30px 15px; }
+
+header {
+  background-image: url("../img/jet-sky-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header h1 {
+    color: #ffffff; }
+
+.intro {
+  text-align: center; }
+  .intro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; }
+
+.timeline .timeline__row {
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .timeline .timeline__row div {
+    width: 350px;
+    position: relative; }
+  .timeline .timeline__row span.line__box {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    border: 1px solid green; }
+  .timeline .timeline__row span.line {
+    border: 1px solid green;
+    margin: 0 50px; }
+  .timeline .timeline__row span.circle {
+    display: inline-block;
+    background-color: green;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 46%; }
+  .timeline .timeline__row div:nth-of-type(odd) {
+    text-align: right; }
+    .timeline .timeline__row div:nth-of-type(odd) span.line__box {
+      right: -50px; }
+    .timeline .timeline__row div:nth-of-type(odd) span.circle {
+      right: -56px; }
+  .timeline .timeline__row div:nth-of-type(even) {
+    text-align: left; }
+    .timeline .timeline__row div:nth-of-type(even) span.line__box {
+      left: -50px; }
+    .timeline .timeline__row div:nth-of-type(even) span.circle {
+      left: -56px; }
+  .timeline .timeline__row .step__1 {
+    margin-top: 25px; }
+  .timeline .timeline__row .step__2 {
+    margin-top: 100px; }
+  .timeline .timeline__row .step__3 {
+    margin-top: -30px; }
+  .timeline .timeline__row .step__4 {
+    margin-top: 90px;
+    margin-bottom: 30px; }
+  @media (max-width: 480px) {
+    .timeline .timeline__row {
+      display: block; }
+      .timeline .timeline__row div:nth-of-type(odd),
+      .timeline .timeline__row div {
+        width: auto;
+        text-align: left; }
+        .timeline .timeline__row div:nth-of-type(odd) span,
+        .timeline .timeline__row div span {
+          display: none; }
+      .timeline .timeline__row span {
+        display: none; }
+      .timeline .timeline__row .step__1,
+      .timeline .timeline__row .step__2,
+      .timeline .timeline__row .step__3,
+      .timeline .timeline__row .step__4 {
+        margin-top: 0px;
+        margin-bottom: 30px; } }
+
+/*# sourceMappingURL=output.css.map */
