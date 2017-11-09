@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: 'Flamenco', cursive;
 }
-h1, ul, li, p, a, i {
+h1, h2, ul, li, p, a, i {
   margin: 0;
   padding: 0;
   color: #fff;
@@ -14,10 +14,12 @@ h1 {
   letter-spacing: 0.05em;
   font-size: 1.75em;
   font-weight: 300;
-  padding-bottom: 0.5em;
 }
-h1 span {
-  font-size: 0.75em;
+h2 {
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding: 0.5em 0;
 }
 a:focus {
   outline: 0px !important;
