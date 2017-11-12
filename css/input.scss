@@ -1,9 +1,6 @@
 $white: #ffffff;
 $black: #000000;
 
-// * {
-//   box-sizing: border-box;
-// }
 body {
   margin: 0;
   font-family: 'Flamenco', cursive;
@@ -14,10 +11,6 @@ h1, h2, ul, li, p, a, i {
 }
 h2 {
   font-size: 27px;
-}
-a {
-  color: $white;
-  font-size: 18px;
 }
 .nav>li>a:focus, .nav>li>a:hover {
   background-color: transparent;
@@ -30,19 +23,28 @@ a {
   li {
     margin: 0 15px;
   }
+  a {
+    color: $white;
+    font-size: 18px;
+  }
 }
 section {
   padding: 30px 15px;
 }
 
+.container--sm {
+  width: 450px;
+  margin: 0 auto;
+}
+
 
 
 header {
-  background-image: url('../img/jet-sky-min.jpg');
-  background-position: 50% 55%;
+  background-image: url('../img/bg.jpg');
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 250px;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,8 +53,17 @@ header {
   }
 }
 
-.intro {
+.intro,
+.talks {
   text-align: center;
+}
+
+.intro,
+.timeline {
+  background-color: #F3F1F3;
+}
+
+.intro {
   img {
     width: 100px;
     height: 100px;
@@ -62,31 +73,37 @@ header {
 
 
 .timeline {
+  padding-top: 0;
   .timeline__item {
-    position: relative;
     width: 250px;
     text-align: center;
-    margin-bottom: 60px;
-    img {
+    margin-bottom: 20px;
+    .img__wrapper {
+      margin: 0 auto;
+      position: relative;
       width: 90px;
       height: 90px;
       border-radius: 50%;
       border: 2px solid $black;
-      padding: 10px;
       margin-bottom: 6px;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      padding: 10px;
+    }
+    &.last {
+      margin: 0 auto;
+      padding-left: 1px;
     }
   }
   .timeline__row {
     display: flex;
     justify-content: center;
     position: relative;
-    div {
-      // width: 350px;
-      // position: relative;
-    }
     span.line__box {
       position: absolute;
-      top: 24%;
+      top: 47%;
       width: 130px;
       border: 1px solid $black;
     }
@@ -94,45 +111,27 @@ header {
       border: 1px solid $black;
       margin: 0 50px;
     }
-    span.circle {
-      display: inline-block;
-      background-color: $black;
-      height: 10px;
-      width: 10px;
-      border-radius: 10px;
-      position: absolute;
-      top: 46%;
-    }
     div:nth-of-type(odd) {
-      // text-align: right;
       span.line__box {
-        right: -50px;
-      }
-      span.circle {
-        right: -56px;
+        right: -132px;
       }
     }
     div:nth-of-type(even) {
-      // text-align: left;
       span.line__box {
-        left: -50px;
+        left: -132px;
       }
-      span.circle {
-        left: -56px;
-      }
-    }
-    .step__1 {
-      margin-top: 25px;
     }
     .step__2 {
-      margin-top: 100px;
+      margin-top: 70px;
     }
     .step__3 {
-      margin-top: -30px;
+      margin-top: -50px;
     }
     .step__4 {
-      margin-top: 90px;
-      margin-bottom: 30px;
+      margin-top: 40px;
+    }
+    .step__5 {
+      margin-top: -60px;
     }
     @media (max-width: 480px) {
       display: block;
@@ -155,5 +154,32 @@ header {
         margin-bottom: 30px;
       }
     }
+  }
+}
+
+.talks {
+  p {
+    display: inline;
+  }
+}
+.contact {
+  h2 {
+    text-align: center;
+  }
+  form {
+    margin: 0 auto;
+    width: 450px;
+  }
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #283B41;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 15px;
+  p {
+    color: $white;
   }
 }

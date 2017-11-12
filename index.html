@@ -32,6 +32,12 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		    </div>
+		    <div class="navbar-left">
+		    	<ul class="nav navbar-nav">
+		        <li><a href="https://de.linkedin.com/in/marialysenkotti" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#contact-form"><i class="fa fa-envelope"></i></a></li>
+		      </ul>
+		    </div>
 		    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
@@ -46,93 +52,112 @@
 		</header>
 
 		<section class="intro">
-			<img src="img/maria.jpg" alt="">
-			<h1>Maria Lysén Kotti</h1>
-			<p>Director of Marketing at AUTO1</p>
+			<div class="container--sm">
+				<img src="img/maria.jpg" alt="">
+				<h1>Maria Lysén Kotti</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquid tenetur dolore fugiat odio quam maiores necessitatibus officia nihil delectus incidunt temporibus aspernatur amet, architecto.</p>
+			</div>
 		</section>
 		<section class="timeline">
 			 <div class="timeline__wrapper">
-        <div class="timeline__row">
+			 	<div class="timeline__row">
           <div class="timeline__item step__1">
-            <span class="line__box"></span>
-            <img src="img/loreal.svg" alt="">
-            <h2>Digital Analytics</h2>
-            <p>L'Oréal <i class="fa fa-map-pin" aria-hidden="true"></i> New York</p>
-            <p>Sep 14 - May 15</p>
+						<div class="img__wrapper">
+            	<span class="line__box"></span>
+            	<img src="img/auto1.svg" alt="">
+            </div>
+            <h2>Director of Marketing</h2>
+            <p>Auto1 <i class="fa fa-map-pin" aria-hidden="true"></i> Berlin</p>
+            <p>Aug 16 - present</p>
           </div>
           <span class="line"></span>
           <div class="timeline__item step__2">
-            <span class="line__box"></span>
-            <img src="img/pmg.png" alt="">
-            <h2>Marketing Strategist</h2>
-            <p>PMG <i class="fa fa-map-pin" aria-hidden="true"></i> New York</p>
-            <p>Jan 14 - Sep 14</p>
+            <div class="img__wrapper">
+            	<span class="line__box"></span>
+            	<img src="img/auto1.svg" alt="">
+            </div>
+            <h2>Head of CRO</h2>
+            <p>Auto1 <i class="fa fa-map-pin" aria-hidden="true"></i> Berlin</p>
+            <p>Apr 16 - Aug 16</p>
           </div>
         </div>
         <div class="timeline__row">
           <div class="timeline__item step__3">
-            <span class="line__box"></span>
-            <img src="img/eco.png" alt="">
+						<div class="img__wrapper">
+            	<span class="line__box"></span>
+            	<img src="img/auto1.svg" alt="">
+            </div>
+            <h2>Sr. CRO Manager</h2>
+            <p>Auto1 <i class="fa fa-map-pin" aria-hidden="true"></i> Berlin</p>
+            <p>Jul 15 - Apr 16</p>
+          </div>
+          <span class="line"></span>
+          <div class="timeline__item step__4">
+            <div class="img__wrapper">
+            	<span class="line__box"></span>
+            	<img src="img/loreal.svg" alt="">
+            </div>
+            <h2>Digital Analytics</h2>
+            <p>L'Oréal <i class="fa fa-map-pin" aria-hidden="true"></i> New York</p>
+            <p>Sep 14 - May 15</p>
+          </div>
+        </div>
+        <div class="timeline__row">
+          <div class="timeline__item step__5">
+						<div class="img__wrapper">
+            	<span class="line__box"></span>
+            	<img src="img/pmg.svg" alt="">
+            </div>
+            <h2>Marketing Strategist</h2>
+            <p>PMG <i class="fa fa-map-pin" aria-hidden="true"></i> New York</p>
+            <p>Jan 14 - Sep 14</p>
+          </div>
+          <span class="line"></span>
+          <div class="timeline__item step__6">
+          	<div class="img__wrapper">
+            	<span class="line__box"></span>
+            	<img src="img/ecp_1.png" alt="">
+            </div>
             <h2>Marketing Manager</h2>
             <p>Ecommerce Partners <i class="fa fa-map-pin" aria-hidden="true"></i> New York</p>
             <p>Jan 13 - Dec 13</p>
           </div>
-          <span class="line"></span>
-          <div class="timeline__item step__4">
-            <span class="line__box"></span>
-            <p>test</p>
-          </div>
+        </div>
+        <div class="timeline__item last">
+					<div class="img__wrapper">
+						<img src="img/liu.png" alt="">
+					</div>
+					<h2>B.S International Business</h2>
+					<p>Long Island University, C.W Post Campus</p>
+					<p>2012 - 2014</p>
         </div>
       </div>
 		</section>
-		<!-- <div class="bg-container">
-			<div class="card">
-				<h1>Maria Kotti <span class="break">- </span><span class="title">Head of CRO @Auto1</span></h1>
-				<ul class="social-icons">
-					<li class="icons"><a href="https://de.linkedin.com/in/marialysenkotti" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li class="icons"><a href="#" data-toggle="modal" data-target="#contact-modal"><i class="fa fa-envelope"></i></a></li>
-				</ul>
-				<a id="presentation" href="https://s3.eu-central-1.amazonaws.com/mariakotti/public/hello.rtf">Presentation</a>
+		<section class="contact">
+			<div class="container--sm">
+				<h2>Contact</h2>
+				<form id="contact-form" action="//formspree.io/marialkotti@gmail.com" method="POST">
+	    		<input type="text" name="_gotcha" style="display:none">
+	    		<div class="form-group">
+						<label for="name">Name:</label>
+	  				<input class="form-control" type="text" name="name" required>
+	  			</div>
+	  			<div class="form-group">
+	  				<label for="email">Email:</label>
+	  				<input class="form-control" type="email" name="_replyto"required>
+	  			</div>
+	  			<div class="form-group">
+	  				<label for="message">Message:</label>
+	  				<textarea class="form-control" rows="5" type="text" style="resize:none" name="message" required></textarea>
+					</div>
+	  			<div class="form-group">
+	  				<input class="btn btn-default" type="submit" value="Send">
+	  			</div>
+				</form>
 			</div>
-		</div> -->
-
-
-
-
-
-
-
-
-					<!--Modal-->
-			<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title">Contact Me</h4>
-			      </div>
-			      <div class="modal-body">
-			      	<form id="contact-form" action="//formspree.io/marialkotti@gmail.com" method="POST">
-			      		<input type="text" name="_gotcha" style="display:none">
-			      		<div class="form-group">
-									<label for="name">Name:</label>
-			    				<input class="form-control" type="text" name="name" required>
-			    			</div>
-			    			<div class="form-group">
-			    				<label for="email">Email:</label>
-			    				<input class="form-control" type="email" name="_replyto"required>
-			    			</div>
-			    			<div class="form-group">
-			    				<label for="message">Message:</label>
-			    				<textarea class="form-control" rows="5" type="text" style="resize:none" name="message" required></textarea>
-								</div>
-			    			<div class="form-group">
-			    				<input class="btn btn-default" type="submit" value="Send">
-			    			</div>
-							</form>
-			      </div>
-			    </div>
-			  </div>
-			</div>
+		</section>
+		<footer>
+			<p>&copy; 2017 Maria Kotti</p>
+		</footer>
 	</body>
 </html>
