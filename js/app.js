@@ -21,15 +21,15 @@ $(document).ready(function(){
   });
 
   var thankYouMessage = function() {
-    var message = 'Thank you for your message. I will get back to you shortly.';
-    $('#contact-form').remove();
-    // $('.modal-title').text(message);
-    // $('.modal-body').css({'padding': '0'});
-    // setTimeout(function() {
-    //   $('#contact-modal').modal('hide');
-    // }, 3000);
+    _setContainerHeight();
+    $('#contact-form').hide();
+    $('.message').removeClass('hidden');
+  }
 
-  };
+  var _setContainerHeight = function() {
+    var height = $('.contact').height();
+    $('.contact').css({'min-height': height + "px"});
+  }
 
   $('a[href*="#"]').click(function(event) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

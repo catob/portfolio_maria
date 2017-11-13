@@ -1,46 +1,75 @@
 $white: #ffffff;
 $black: #000000;
+$border-color: #a89cc8;
+$dark: #283B41;
 
 body {
   margin: 0;
-  font-family: 'Flamenco', cursive;
+  font-family: 'Khula', sans-serif;
 }
 h1, h2, ul, li, p, a, i {
   margin: 0;
   padding: 0;
+  color: $dark;
+}
+h1 {
+  font-family: 'Flamenco', cursive;
+  font-size: 40px;
 }
 h2 {
   font-size: 27px;
 }
-.nav>li>a:focus, .nav>li>a:hover {
+.btn {
+  width: 90px;
+  transition: all .4s;
   background-color: transparent;
-  border-bottom: 1px solid $white;
+  border-color: $dark;
+  &:hover,
+  &:focus {
+    background-color: $border-color;
+  }
 }
-.navbar {
-  position: absolute;
-  width: 100%;
+.form-control:focus {
+  border-color: $border-color;
+}
+.hidden {
+  display: none;
+}
 
-  li {
-    margin: 0 15px;
-  }
-  a {
-    color: $white;
-    font-size: 18px;
-  }
-}
 section {
-  padding: 30px 15px;
+  padding: 40px 15px;
 }
 
 .container--sm {
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  div {
+    max-width: 1100px;
+    margin: 0 auto;
+    a {
+      float: right;
+      margin: 20px;
+      font-size: 20px;
+    }
+    i {
+      color: $white;
+      transition: all .4s;
+      &:hover {
+        color: $border-color;
+      }
+    }
+  }
 }
 
 
 
 header {
-  background-image: url('../img/bg.jpg');
+  background-image: linear-gradient(to top, rgba(46, 49, 65, 0.3), rgba(46, 49, 65, 0.5)), url('../img/bg.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,16 +87,18 @@ header {
   text-align: center;
 }
 
-.intro,
-.timeline {
-  background-color: #F3F1F3;
-}
-
 .intro {
   img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+  }
+  p {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000F3D;
   }
 }
 
@@ -84,7 +115,7 @@ header {
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      border: 2px solid $black;
+      border: 2px solid $border-color;
       margin-bottom: 6px;
     }
     img {
@@ -100,6 +131,20 @@ header {
       margin: 0 auto;
       padding-left: 1px;
     }
+    @media (max-width: 640px) {
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 30px;
+      .img__wrapper {
+        border: none;
+      }
+      img {
+        padding: 0;
+      }
+      &.last {
+        margin: 0;
+        width: 100%;
+      }
+    }
   }
   .timeline__row {
     display: flex;
@@ -109,10 +154,10 @@ header {
       position: absolute;
       top: 47%;
       width: 130px;
-      border: 1px solid $black;
+      border: 1px solid $border-color;
     }
     span.line {
-      border: 1px solid $black;
+      border: 1px solid $border-color;
       margin: 0 50px;
     }
     div:nth-of-type(odd) {
@@ -137,12 +182,12 @@ header {
     .step__5 {
       margin-top: -60px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 640px) {
       display: block;
       div:nth-of-type(odd),
       div {
-        width: auto;
-        text-align: left;
+        width: 100%;
+        // text-align: left;
         span {
           display: none;
         }
@@ -150,10 +195,10 @@ header {
       span {
         display: none;
       }
-      .step__1,
       .step__2,
       .step__3,
-      .step__4 {
+      .step__4,
+      .step__5 {
         margin-top: 0px;
         margin-bottom: 30px;
       }
@@ -162,23 +207,37 @@ header {
 }
 
 .talks {
+  background-color: lightgrey;
+  background-color: rgba(46, 49, 65, 0.2);
   p {
-    display: inline;
+    margin: 5px 0;
+  }
+  a {
+    font-size: 16px;
+    font-weight: bold;
   }
 }
 .contact {
+  padding-top: 60px;
   h2 {
     text-align: center;
   }
   form {
-    margin: 0 auto;
+    margin: 20px 0 auto;
     width: 450px;
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+  .message {
+    text-align: center;
+    margin-top: 20px;
   }
 }
 footer {
   width: 100%;
   height: 50px;
-  background-color: #283B41;
+  background-color: $dark;
   display: flex;
   justify-content: flex-end;
   align-items: center;
