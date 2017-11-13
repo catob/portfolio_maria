@@ -72,6 +72,9 @@ header {
       width: 80px;
       height: 80px;
       padding: 10px; }
+    .timeline .timeline__item i {
+      font-size: 10px;
+      margin-left: 5px; }
     .timeline .timeline__item.last {
       margin: 0 auto;
       padding-left: 1px; }
