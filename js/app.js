@@ -8,7 +8,7 @@ $(document).ready(function(){
     var defaultSubmitText = $submit.val();
 
     $.ajax({
-      url: '//formspree.io/marialkotti@gmail.com',
+      url: 'https://formspree.io/cato.benjaminsen@gmail.com',
       method: 'POST',
       data: $(this).serialize(),
       dataType: 'json',
@@ -16,6 +16,7 @@ $(document).ready(function(){
         thankYouMessage();
       },
       error: function(err) {
+        console.log(err);
       }
     });
   });
