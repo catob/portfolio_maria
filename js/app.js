@@ -1,7 +1,4 @@
 $(document).ready(function(){
-  $('#contact-modal').on('shown.bs.modal', function () {
-    $('#contact-modal').focus();
-  });
 
   var $contactForm = $('#contact-form');
 
@@ -11,7 +8,7 @@ $(document).ready(function(){
     var defaultSubmitText = $submit.val();
 
     $.ajax({
-      url: '//formspree.io/marialkotti@gmail.com',
+      url: 'https://formspree.io/cato.benjaminsen@gmail.com',
       method: 'POST',
       data: $(this).serialize(),
       dataType: 'json',
@@ -19,17 +16,38 @@ $(document).ready(function(){
         thankYouMessage();
       },
       error: function(err) {
+        console.log(err);
       }
     });
   });
 
-  thankYouMessage = function() {
-    var message = 'Thank you for your message. I will get back to you shortly.';
-    $('#contact-form').remove();
-    $('.modal-title').text(message);
-    $('.modal-body').css({'padding': '0'});
-    setTimeout(function() {
-      $('#contact-modal').modal('hide');
-    }, 3000);
-  };
+  var thankYouMessage = function() {
+    _setContainerHeight();
+    $('#contact-form').hide();
+    $('.message').removeClass('hidden');
+  }
+
+  var _setContainerHeight = function() {
+    var height = $('.contact').height();
+    $('.contact').css({'min-height': height + "px"});
+  }
+
+  $('a[href*="#"]').click(function(event) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 750, function() {
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) {
+            return false;
+          };
+        });
+      }
+    }
+  });
 });
